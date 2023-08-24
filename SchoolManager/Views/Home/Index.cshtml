@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <a class="btn btn-sm btn-success" asp-controller="Student" asp-action="StudentCourses">Student and Token Courses</a>
+    <a class="btn btn-sm btn-success" asp-controller="Student" asp-action="StudentTeacher">Student and Token Courses Teachers</a>
+    <a class="btn btn-sm btn-success" asp-controller="Student" asp-action="StudentNotTokenCourses">Student and NotToken Courses</a>
+    <a class="btn btn-sm btn-success" asp-controller="Course" asp-action="CourseStudentCount">Course StudentCount</a>
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+

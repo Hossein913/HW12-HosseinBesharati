@@ -1,0 +1,35 @@
+﻿@model List<CourseStudentCountDto>
+
+
+@{
+    ViewData["Title"] = "Student list and Token Courses";
+}
+
+<h1>Student list and Token Courses</h1>
+
+<table class="table" border="1">
+    <thead>
+        <tr>
+            <th>
+                <p>CourseName</p>
+            </th>
+            <th>
+                <p>StudentCount</p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentCount)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Back</a>
